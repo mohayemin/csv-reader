@@ -4,12 +4,14 @@
   <!-- Highlight Card -->
   <div class="card">
     <label for="csv-file-input">
-      {{filename || 'No file choosen'}} <br>
       Choose a file
     </label>
     <input type="file"
            id="csv-file-input"
            (change)="fileChange($event)">
+  </div>
+  <div>
+    {{filename || 'No file choosen'}}
   </div>
   <div [hidden]="!json">
       <pre>{{json | json}}</pre>
