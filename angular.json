@@ -125,8 +125,13 @@
               "devServerTarget": "csv-reader:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "csv-reader"
 }
